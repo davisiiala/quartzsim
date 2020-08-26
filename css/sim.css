@@ -1,0 +1,336 @@
+/*
+    CSS for simulator page only
+*/
+
+.rollContainer {
+    margin-top: 3.5%;
+    padding: 0 0 2% 0;
+    background: #bcf6fb;
+}
+
+.rollContainer .banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: auto auto;
+    padding: 1% 0;
+}
+
+.rollContainer .bannerSelect {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1% auto 0 auto;
+}
+
+.rollContainer .bannerSelect select {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.rollContainer .tips {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    margin: 2% auto -1% auto;
+    background: #c8dcff;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.rollContainer .tips .tip1 {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 10px 2px 0 2px;
+}
+
+.rollContainer .tips .tip2 {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 0 2px 10px 2px;
+}
+
+.rollContainer .buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 1% auto;
+}
+
+.rollContainer .buttonContainer button {
+    width: 12%;
+    height: 50px;
+    outline: 0;
+    margin: 3% 3% 0 3%;
+    border-radius: 5px;
+    border-color: pink;
+    background: pink;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rollContainer .buttonContainer .lButton {
+    margin-left: -47px;
+    padding: 5px 5px 5px 25px;
+    outline: 0;
+}
+
+.rollContainer .buttonContainer .rButton {
+    margin-right: -47px;
+    padding: 5px 29px 5px 5px;
+    outline: 0;
+}
+
+.rollContainer .buttonContainer .lButton:hover {
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background: pink;
+}
+    
+.rollContainer .buttonContainer .rButton:hover {
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background: pink;
+}
+
+.rollContainer .buttonContainer .animatedQuartzLeft, .rollContainer .buttonContainer .animatedQuartzRight {
+    height: 35px;
+    margin: 3.5% 0 0 0;
+    z-index: 1;
+}
+
+.rollContainer .multiRollDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    min-height: 250px;
+    margin: 2% auto 0 auto;
+    padding: 0 0;
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #c8dcff;
+}
+
+.rollContainer .multiRollDisplay img {
+    flex: 10%;
+    width: 12.5%;
+    margin: 2% 2%;
+    padding: 5px 5px;
+    border: thick solid silver;
+    border-image-slice: 1;
+    background-color: white;
+}
+
+.rollContainer .singleRollDisplay {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 20%;
+    min-height: 250px;
+    margin: 2% auto 0 auto;
+    padding: 0 0;
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #c8dcff;
+}
+
+.rollContainer .singleRollDisplay img {
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border: thick solid silver;
+    border-image-slice: 1;
+    background-color: white;
+}
+
+.BBHover img {
+    position: fixed;
+    top: 22%;
+    left: -1%;
+    width: 12%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.BBHover .tooltipLeft {
+    visibility: hidden;
+    position: fixed;
+    top: 27%;
+    left: 8.75%;
+    width: 150px;
+    padding: 12px 12px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14.5px;
+    color: black;
+    text-align: left;
+    
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-out 0s;
+}
+
+.BBHover:hover .tooltipLeft {
+    visibility: visible;
+    opacity: 0.85;
+}
+
+.BBHover .tooltipLeft:after {
+    content: " ";
+    position: absolute;
+    top: 13%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+.JeanneHover img {
+    position: fixed;
+    top: calc(22% + 35px);
+    right: 0%;
+    width: 8.75%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.JeanneHover .tooltipRight {
+    visibility: hidden;
+    position: fixed;
+    top: 25%;
+    right: 8.75%;
+    width: 150px;
+    max-height: 340px;
+    padding: 12px 12px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14.5px;
+    color: black;
+    
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-out 0s;
+}
+
+.JeanneHover:hover .tooltipRight {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.JeanneHover .tooltipRight:after {
+    content: " ";
+    position: absolute;
+    top: 13%;
+    left: 100%;
+    margin-top: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+
+.JeanneHover .tooltipRight .rateupImages {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 150px;
+    max-height: 210px;
+}
+
+.JeanneHover .tooltipRight .rateupImages img {
+    position: relative;
+    top: 0;
+    width: 60px;
+    cursor: default;
+    opacity: 1.0;
+}
+
+.JeanneHover .tooltipRight .rateupText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 150px;
+    max-height: 180px;
+}
+
+.JeanneHover .tooltipRight .rateupText p {
+    top: 20px; 
+    right: 20px;
+    margin: 0 0;
+    line-height: 90%;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.JeanneHover .tooltipRight .rateupText p:nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(35px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotatecw {
+    from {
+      transform: rotate(0deg);
+    }
+    to { 
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateccw {
+    from {
+      transform: rotate(360deg);
+    }
+    to { 
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes tiltRight {
+    from {
+      transform: rotate(0deg);
+    }
+    to { 
+      transform: rotate(-20deg);
+    }
+}
+
+@keyframes tiltLeft {
+    from {
+      transform: rotate(-20deg);
+    }
+    to { 
+      transform: rotate(30deg);
+    }
+}
+
+@keyframes returnCenter {
+    from {
+      transform: rotate(30deg);
+    }
+    to { 
+      transform: rotate(0deg);
+    }
+}
