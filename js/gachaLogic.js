@@ -187,7 +187,7 @@ class gacha {
         if (!servantPulled) // At roll #9, servant guarantee is checked
         {
             currentRoll.rollType = "servant"; // Guarantees at least one servant
-            currentRoll.rollRarity = determineRarity (currentRoll.rollType);
+            currentRoll.rollRarity = this.determineRarity (currentRoll.rollType);
         }
         else 
         {
