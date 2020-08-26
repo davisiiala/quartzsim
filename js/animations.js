@@ -83,8 +83,3 @@ class animations {
         elmnt.scrollIntoView(false);
     }
 }
-
-
-
-
-  
