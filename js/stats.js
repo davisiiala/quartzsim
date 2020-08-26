@@ -174,4 +174,3 @@ class bbStats {
         this.updateStatsDisplay (); // Changes HTML elements to display stats
     }
 }
-
