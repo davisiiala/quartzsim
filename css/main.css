@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    
     width: 100%;
     margin: 0 0 0 0;
     font-family: 'Montserrat','sans-serif';
@@ -38,14 +37,16 @@ hr {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background: #9BDDF3;
     padding-bottom: 1.5em;
+    width: 100%;
 }
 
-header .logo{
-    width: 15em;
-    margin: 0 auto 0 12%;
+header .logo {
+    width: 12em;
+    margin-left: 35px;
+    margin-top: 6px;
 }
 
 header a {
@@ -59,6 +60,7 @@ nav {
 nav ul li {
     padding-top: 2.8em;
     float: left;
+    width: 50%;
 }
 
 nav ul li a {
