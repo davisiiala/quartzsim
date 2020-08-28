@@ -213,7 +213,7 @@
 .JeanneHover .tooltipRight {
     visibility: hidden;
     position: fixed;
-    top: 15%;
+    top: 8%;
     right: 8.75%;
     width: 150px;
     max-height: 340px;
