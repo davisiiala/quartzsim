@@ -55,12 +55,12 @@ class JeanneDisplay {
 
     adjustHeight (numberOfRateups) // Adjusts the min-height of div with id="rateupShowcase" based on how many rateups there are in a given section
     {
-        if (numberOfRateups == 1) document.getElementById("rateupShowcase").style.minHeight = "140px";
-        else if (numberOfRateups == 2) document.getElementById("rateupShowcase").style.minHeight = "170px";
-        else if (numberOfRateups == 3) document.getElementById("rateupShowcase").style.minHeight = "265px";
-        else if (numberOfRateups == 4) document.getElementById("rateupShowcase").style.minHeight = "290px";
-        else if (numberOfRateups == 5) document.getElementById("rateupShowcase").style.minHeight = "370px";
-        else document.getElementById("rateupShowcase").style.minHeight = "390px";
+        if (numberOfRateups == 1) document.getElementById("rateupShowcase").style.minHeight = "10%";
+        else if (numberOfRateups == 2) document.getElementById("rateupShowcase").style.minHeight = "17%";
+        else if (numberOfRateups == 3) document.getElementById("rateupShowcase").style.minHeight = "25%";
+        else if (numberOfRateups == 4) document.getElementById("rateupShowcase").style.minHeight = "30%";
+        else if (numberOfRateups == 5) document.getElementById("rateupShowcase").style.minHeight = "35%";
+        else document.getElementById("rateupShowcase").style.minHeight = "40%";
     }
 
     checkFillEmpty (numberOfRateups)
@@ -75,11 +75,10 @@ class JeanneDisplay {
             this.flexBox2.appendChild (p = document.createElement("p"));
 
             img.src = "images/fgo_rateup_jeanne.webp";
-            img.style.width = "100px";
             p.style.fontSize = "13px";
             p.innerHTML = "nothin' to see here . . .";
 
-            document.getElementById("rateupShowcase").style.minHeight = "140px";
+            document.getElementById("rateupShowcase").style.minHeight = "10%";
         }
     }
 }
