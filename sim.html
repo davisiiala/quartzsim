@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sim.css">
 </head>
-<body id="body" onload="stats.updateStatsDisplay(stats)">
+<body id="body" onload="stats.updateStatsDisplay()">
     
     <header>
         <a href="index.html" class="logo"><img src="images/logo.png" alt="logo" class="logo"></a>
@@ -29,7 +29,7 @@
         <div class="bannerSelect"> 
             <form action="">
                 <label for="Select a Banner: "></label>
-                <select name="banners" id="bannerChoice" onchange="bannerUpdate()" size="1">
+                <select name="banners" id="bannerChoice" onchange="bannerSelect()" size="1">
                     <option value="story1" >Story Summon (No Story-Locked)</option>
                     <option value="story2">Story Summon (With Story-Locked)</option>
                     <option value="summer3-1">Summer Servant Festival Pickup Summon 1</option>
@@ -98,15 +98,15 @@
         <p> ~ Created by Davis Liu ~ </p>
     </footer>
 
-    <script type="text/javascript" src="js/imageDictionary.js"></script>
-    <script type="text/javascript" src="js/gachaRates.js"></script>
-    <script type="text/javascript" src="js/gachaList.js"></script>
-    <script type="text/javascript" src="js/rateupBanners.js"></script>
-    <script type="text/javascript" src="js/gachaPermanentPool.js"></script>
+    <script type="text/javascript" src="js/bb-stats.js"></script>
+    <script type="text/javascript" src="js/image-dictionary.js"></script>
+    <script type="text/javascript" src="js/gacha-spread.js"></script>
+    <script type="text/javascript" src="js/banner-content.js"></script>
+    <script type="text/javascript" src="js/banner-select.js"></script>
+    <script type="text/javascript" src="js/gacha-permanent-pool.js"></script>
     <script type="text/javascript" src="js/animations.js"></script>
-    <script type="text/javascript" src="js/stats.js"></script>
-    <script type="text/javascript" src="js/jeanneDisplay.js"></script>
-    <script type="text/javascript" src="js/gachaLogic.js"></script>
+    <script type="text/javascript" src="js/jeanne-display.js"></script>
+    <script type="text/javascript" src="js/gacha.js"></script>
 
 </body>
 
