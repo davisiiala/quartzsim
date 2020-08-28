@@ -1,6 +1,6 @@
 // Contains all the functions for animation display/logic
 
-class animations {
+class Animations {
     constructor ()
     {
 
