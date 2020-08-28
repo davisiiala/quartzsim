@@ -158,9 +158,9 @@
 
 .BBHover img {
     position: fixed;
-    top: 22%;
-    left: -1%;
-    width: 12%;
+    top: 13%;
+    left: 1%;
+    width: 9%;
     margin: 0 auto;
     text-align: center;
     cursor: pointer;
@@ -169,7 +169,7 @@
 .BBHover .tooltipLeft {
     visibility: hidden;
     position: fixed;
-    top: 27%;
+    top: 12%;
     left: 8.75%;
     width: 150px;
     padding: 12px 12px;
@@ -192,7 +192,7 @@
 .BBHover .tooltipLeft:after {
     content: " ";
     position: absolute;
-    top: 13%;
+    top: 18%;
     right: 100%;
     margin-top: -5px;
     border-width: 5px;
@@ -202,7 +202,7 @@
 
 .JeanneHover img {
     position: fixed;
-    top: calc(22% + 35px);
+    top: 13%;
     right: 0%;
     width: 8.75%;
     margin: 0 auto;
@@ -213,7 +213,7 @@
 .JeanneHover .tooltipRight {
     visibility: hidden;
     position: fixed;
-    top: 25%;
+    top: 15%;
     right: 8.75%;
     width: 150px;
     max-height: 340px;
@@ -357,15 +357,11 @@
     }
 
     .BBHover .tooltipLeft {
-        top: 27%;
-        left: 8.75%;
         font-size: 8px;  
         width: 12%; 
     }
 
     .JeanneHover .tooltipRight {
-        top: 25%;
-        right: 8.75%;
         width: 80px;
         max-height: 340px;
         font-size: 8px;
@@ -429,9 +425,11 @@
     .rollContainer {
         min-height: 480px;
     }
+
     .rollContainer .buttonContainer .lButton, .rollContainer .buttonContainer .rButton {
         font-size: 7px;
     }
+
     .rollContainer .singleRollDisplay {
         min-height: 120px;
     }
